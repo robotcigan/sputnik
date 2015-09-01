@@ -1,0 +1,155 @@
+// Inputs
+input,
+textarea,
+select
+	background: transparent
+	width: 100%
+
+
+// Input type checkbox
+
+input[type="checkbox"]
+	-webkit-appearance: none
+	width: 18px
+	height: 18px
+	border: 2px solid #656565
+	position: relative
+	overflow: hidden
+	cursor: pointer
+	transition: all .14s
+
+input[type="checkbox"]:checked
+	transform: rotate(45deg)
+	margin-left: 6px
+	margin-right: 4px
+	width: 8px
+	border: 2px solid $success
+	border-top: transparent
+	border-left: transparent
+
+
+// Input type radio
+input[type="radio"]
+	-webkit-appearance: none
+	width: 18px
+	height: 18px
+	border: 2px solid #555
+	border-radius: 50%
+	cursor: pointer
+	transition: all .2s
+	position: relative
+
+input[type="radio"]:checked
+	border-color: $primary
+
+input[type="radio"]:before
+	content: ''
+	position: absolute
+	margin: 4px 0 0 4px
+	width: 6px
+	height: 6px
+	border-radius: 50%
+	opacity: 0
+	background: $primary
+	transition: all .2s
+
+input[type="radio"]:after
+	content: ''
+	position: absolute
+	width: 14px
+	height: 14px
+	border-radius: 50%
+	opacity: 0
+	background: rgba(40,40,40,.1)
+	transition: all .8s
+
+input[type="radio"]:active:after
+	opacity: 1
+	background: rgba(40,40,40,.2)
+	transform: scale(3)
+
+input[type="radio"]:checked:before
+	opacity: 1
+	transform: scale(1.6)
+
+
+// Input type text, email, password, search
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+textarea,
+select
+
+	border: 1px solid #bbb
+	border-radius: 4px
+	// line-height: 45px
+	line-height: 2.5em
+	padding-left: 15px
+	font-size: 16px
+	font-weight: 400
+	position: relative
+	transition: all .4s
+	color: #555
+	&:hover
+		border-color: #aaa
+
+
+	&:focus
+		border-color: $primary
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"]:focus:after
+	content: ''
+	border: 100%
+
+
+// Input type range
+input[type="range"]
+	-webkit-appearance: none
+	cursor: pointer
+	width: 100%
+	border: none
+
+input[type=range]::-webkit-slider-runnable-track 
+    height: 3px
+    background: #ccc
+    transition: all .1s
+
+input[type="range"]:hover::-webkit-slider-runnable-track
+	background: #bbb
+
+input[type=range]::-webkit-slider-thumb 
+    -webkit-appearance: none
+    height: 15px
+    width: 15px
+    border-radius: 50%
+    background: $primary
+    margin-top: -6px
+    transition: all .2s
+
+input[type=range]::-webkit-slider-thumb:hover 
+	transform: scale(1.2)
+
+// Input type range
+input[type=color]
+	border: 0
+
+textarea,
+label
+	font-family: $font
+
+
+
+select
+	width: 100%
+	display: block
+	// height: 45px
+	// height: 47px
+	height: calc(2.5em + 2px)
+	padding-right: 20px
+	cursor: pointer
+	padding-left: 10px

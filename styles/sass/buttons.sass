@@ -1,0 +1,156 @@
+.btn,
+button,
+.btn-lg
+	display: inline-block
+	padding: 10px 25px
+	font-weight: 500
+	border-radius: 4px
+	font-size: 14px
+	transition: all .1s
+	cursor: pointer
+	vertical-align: middle
+	font-weight: 600
+	+user-select(none)
+	color: #fff
+	i,span
+		margin: 0 5px
+
+.btn-lg
+	padding: 15px 50px
+	font-size: 16px
+.btn-default
+	background-color: #ddd
+	color: #555
+	&:hover
+		color: #444
+		background-color: #ccc
+
+	&:active
+		background-color: #bbb
+
+.btn-empty
+	border: 1px solid #ddd
+	color: #555
+	&:hover
+		color: #444
+		border-color: #bbb
+
+	&:active
+		color: #333
+		border-color: #999
+
+.btn-primary
+	background-color: $primary
+	&:hover
+		background-color: darken($primary, 6%)
+
+	&:active
+		background-color: darken($primary, 10%)
+
+.btn-inverse
+	background-color: $inverse
+	&:hover
+		background-color: lighten($inverse, 6%)
+
+	&:active
+		background-color: lighten($inverse, 10%)
+
+.btn-secondary
+	background-color: $asphalt
+	&:hover
+		background-color: darken($asphalt, 6%)
+
+	&:active
+		background-color: darken($asphalt, 10%)
+
+.btn-success
+	background-color: $success
+	&:hover
+		background-color: darken($success, 6%)
+
+	&:active
+		background-color: darken($success, 10%)
+
+.btn-warning
+	background-color: $warning
+	&:hover
+		background-color: darken($warning, 6%)
+
+	&:active
+		background-color: darken($warning, 10%)
+
+.btn-danger
+	background-color: $danger
+	&:hover
+		background-color: darken($danger, 6%)
+
+	&:active
+		background-color: darken($danger, 10%)
+
+.anim
+	position: relative
+	overflow: hidden
+	.hidden-content
+		position: absolute
+		width: 100%
+		left: auto
+		right: 0
+		text-align: center
+		+transition(all .2s)
+
+	.visible-content
+		right: auto
+		+transition(all .2s)
+
+.top.anim
+	.hidden-content
+		+transform(translateY(-200%))
+
+	&:hover .hidden-content
+		+transform(translateY(0))
+
+	&:hover .visible-content
+		+transform(translateY(200%))
+
+.left.anim
+	.hidden-content
+		+transform(translateX(-200%))
+
+	&:hover .hidden-content
+		+transform(translateX(0))
+
+	&:hover .visible-content
+		+transform(translateX(200%))
+
+.right.anim
+	.hidden-content
+		+transform(translateX(200%))
+
+	&:hover .hidden-content
+		+transform(translateX(0))
+
+	&:hover .visible-content
+		+transform(translateX(-200%))
+
+.bottom.anim
+	.hidden-content
+		+transform(translateY(200%))
+
+	&:hover .hidden-content
+		+transform(translateX(0))
+
+	&:hover .visible-content
+		+transform(translateY(-200%))
+
+.fadeIn.anim
+	.hidden-content
+		+transform(scale(0))
+		opacity: 0
+
+	&:hover .hidden-content
+		+transform(scale(1))
+		opacity: 1
+
+	&:hover .visible-content
+		+transform(scale(0))
+		opacity: 0
