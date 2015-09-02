@@ -8,67 +8,75 @@
   <link rel="stylesheet" href="../styles/css/sputnik.css">
   <link rel="stylesheet" href="style.css">
 </head>
-<body></body>
-<div id="menu" class="col-2">
-  <ul class="menu">
-    <div class="menu-header"> <a href="index.html">Sputnik css</a></div>
-    <hr>
-    <li><a href="grid.html">Grid</a></li>
-    <li><a href="base.html">Base</a></li>
-    <li><a href="typography.html">Typography</a></li>
-    <li><a href="buttons.html">Buttons</a></li>
-    <li><a href="tables.html">Tables</a></li>
-    <li><a href="forms.html">Forms</a></li>
-  </ul>
-</div>
-<div id="content" class="col-10">
-  <h1>Forms</h1>
-  <form class="col-6">
-    <div class="col-8">
-      <div class="form-group">
-        <label>Title </label>
-        <input type="text">
+<body>
+  <div class="row">
+    <div id="menu" class="col-2">
+      <ul class="menu">
+        <div class="menu-header"> <a href="index.html">Sputnik css</a></div>
+        <hr>
+        <li><a href="grid.html">Grid</a></li>
+        <li><a href="base.html">Base</a></li>
+        <li><a href="typography.html">Typography</a></li>
+        <li><a href="buttons.html">Buttons</a></li>
+        <li><a href="tables.html">Tables</a></li>
+        <li><a href="forms.html">Forms</a></li>
+        <li><a href="inputs.html">Inputs</a></li>
+        <li><a href="content.html">Content</a></li>
+        <li><a href="icons.html">Icons</a></li>
+      </ul>
+    </div>
+    <div id="content" class="col-10">
+      <div class="container">
+        <h1>Forms</h1>
+        <form class="col-6">
+          <div class="col-8">
+            <div class="form-group">
+              <label>Title </label>
+              <input type="text">
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="form-group">
+              <label>From </label>
+              <select>
+                <option>Admin</option>
+                <option>Sudo</option>
+                <option>User</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-group"> 
+              <label>Content </label>
+              <textarea></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Looks good?</label>
+            <input type="checkbox">
+          </div>
+          <div class="form-group">
+            <div class="btn btn-primary">Submit</div>
+          </div>
+        </form>
+        <form class="col-3">
+          <div class="form-group">
+            <label class="form-input"><i class="fa fa-envelope"></i>
+              <input type="text">
+            </label>
+          </div>
+          <div class="form-group">
+            <label class="form-input"><i class="fa fa-user"></i>
+              <input type="text">
+            </label>
+          </div>
+          <div class="form-group">
+            <label class="form-input"><i class="fa fa-lock"></i>
+              <input type="text">
+            </label>
+          </div>
+        </form>
       </div>
     </div>
-    <div class="col-4">
-      <div class="form-group">
-        <label>From </label>
-        <select>
-          <option>Admin</option>
-          <option>Sudo</option>
-          <option>User</option>
-        </select>
-      </div>
-    </div>
-    <div class="col-12">
-      <div class="form-group"> 
-        <label>Content </label>
-        <textarea></textarea>
-      </div>
-    </div>
-    <div class="form-group">
-      <label>Looks good?</label>
-      <input type="checkbox">
-    </div>
-    <div class="form-group">
-      <div class="btn btn-primary">Submit</div>
-    </div>
-  </form>
-  <form class="col-3">
-    <div class="form-group">
-      <label class="form-input"><i class="fa fa-envelope"></i>
-        <input type="text">
-      </label>
-    </div>
-    <div class="form-group">
-      <label class="form-input"><i class="fa fa-user"></i>
-        <input type="text">
-      </label>
-    </div>
-    <div class="form-group">
-      <label class="form-input"><i class="fa fa-lock"></i>
-        <input type="text">
-      </label>
-    </div>
-  </form>
-</div>
+  </div>
+</body>
